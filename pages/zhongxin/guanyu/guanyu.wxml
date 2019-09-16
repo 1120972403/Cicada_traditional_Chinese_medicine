@@ -1,0 +1,23 @@
+<view class="about">
+  <view class="about-wei">
+    <view class="about-img">
+      <image src="{{img}}" class="in-img" background-size="cover" model="scaleToFill"></image>
+    </view>
+    <view class="about-title">{{title}}</view>
+  </view>
+  <view class="about-content">{{intro}}</view>
+
+  <view class="about-addr">
+    <view class="about-tab">{{contab}}</view>
+    <view>学校: {{address}}</view>
+    <view>团队成员：{{team}}</view>
+    <view>邮箱：{{email}}</view>
+
+    <view>说明：{{shuoming}}</view>
+    <view>下一阶段：
+      <view>0.在中医大</view>
+      <view>1.中医知识答题及经典阅读小程序</view>
+      <view>2.基于深度学习的辅助判断xxxxxx平台</view>
+    </view>
+  </view>
+</view>

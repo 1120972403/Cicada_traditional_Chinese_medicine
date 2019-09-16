@@ -1,0 +1,41 @@
+.zuixin {
+  display: flex;
+  flex-wrap: wrap; /*换行*/
+  width: 100%;
+  background-color: white;
+}
+
+.zuixin-item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+  border-bottom: 1px dotted gainsboro;
+}
+
+.zuixin-img {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #fcfcfc;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px gainsboro;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.zuixin-mc {
+  font-size: 15px;
+  padding: 3px;
+  text-align: center;
+  white-space: nowrap; /*不换行*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.zuixin-redu {
+  text-align: center;
+  padding: 3px;
+  color: red;
+  font-size: 10px;
+}

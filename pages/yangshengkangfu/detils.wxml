@@ -1,0 +1,26 @@
+<import src='../../wxParse/wxParse.wxml' />
+<block wx:for='{{ys_list}}' wx:key="*this" >
+  <image src='{{item.img}}' class='img'>
+  </image>
+  <view class='xinxi' >
+    <view class='name'>{{item.name}}</view>
+    <view class='name1'>介绍</view>
+    <view class='name1-xixni'>
+      <template is="wxParse" data="{{wxParseData:jieshao.nodes}}" />
+    </view>
+    <view class='cailiao'>
+      <view class='name2'>材料</view>
+
+      <view class='name2-xixni'>
+        <template is="wxParse" data="{{wxParseData:cailiao.nodes}}" />
+      </view>
+    </view>
+    <view class='zuofa'>
+      <view class='name2'>做法</view>
+      <view class='name2-xixni'>
+        <template is="wxParse" data="{{wxParseData:zuofa.nodes}}" />
+      </view>
+
+    </view>
+  </view>
+</block>

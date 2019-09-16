@@ -1,0 +1,7 @@
+<!--pages/dati/dati/dati_end/dati_end.wxml-->
+<text>你的得分是{{defen}}</text>
+
+
+<navigator url='/pages/index/index' open-type='switchTab' class='fanhui' style='width:(winHeight/2-50)px'>
+  <button type='primary' class='btn'>回到首页</button>
+</navigator>

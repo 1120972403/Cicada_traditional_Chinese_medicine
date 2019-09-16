@@ -1,0 +1,22 @@
+<view class='zuixin'>
+  <navigator url='/pages/index/xiandaihua/xiandaihua/zhongyaosuyuan' class='zuixin-item'>
+    <image src='https://ask.qcloudimg.com/http-save/developer-news/c8ev6ovthi.jpeg?imageView2/2/w/1620' class='zuixin-img'
+     ></image>
+    <text class='zuixin-mc'>中药溯源</text>
+
+  </navigator>
+    <navigator url='/pages/index/xiandaihua/details/details' class='zuixin-item'>
+    <image src='http://www.zypfkl.com/Uploads/image/news/20170303/4.jpg' class='zuixin-img'
+     ></image>
+    <text class='zuixin-mc'>智能中药房</text>
+
+  </navigator>
+
+    <navigator url='/pages/index/xiandaihua/xiandaihua/zhongyiyun' class='zuixin-item'>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556194098268&di=b4838ed21c5e7b0e4d6951c9c96d25d3&imgtype=0&src=http%3A%2F%2Fs16.sinaimg.cn%2Fmw690%2F001rvRS2zy7bJuvzpgj2f%26690' class='zuixin-img'
+      ></image>
+        <text class='zuixin-mc'>中医云健康</text>
+
+  </navigator>
+ 
+</view>

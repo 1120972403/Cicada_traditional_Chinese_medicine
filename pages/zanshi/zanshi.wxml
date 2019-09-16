@@ -1,0 +1,30 @@
+<import src='../../wxParse/wxParse.wxml' />
+
+<view class="timeline-container">
+  <block wx:for="{{newsList}}" wx:key="item.id">
+    <view class="timeline">
+      <view class="dotline">
+        <view class="line"></view>
+        <view class="dot"></view>
+      </view>
+      <view class="content">
+        <text class="chapter">{{item.time}}</text>
+        <view bindtap="onTap" data-index="{{index}}" >
+          <text class="title">{{item.title}}</text>
+        </view>
+        <view class="{{flag?'isBlock':''}}">
+          <text class="course">
+          {{item.desc}}
+        
+          </text>
+          <!-- <view class='tupian'>
+           <image class='img' src='https://zlzyy.club{{item.img}}' style='width:40px' mode='widthFix'></image>
+          </view> -->
+         
+        </view>
+      </view>
+
+    </view>
+
+  </block>
+</view>

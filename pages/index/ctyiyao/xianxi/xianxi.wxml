@@ -1,0 +1,17 @@
+<import src='../../../../wxParse/wxParse.wxml' />
+<view class='a'>
+  <view class='title'>{{detail.name}}</view>
+  <text class='txt'>传承人：{{detail.ccr}}</text>
+  <view class='item'>
+    <text class='leibie'>{{detail.leibie}}</text>
+    <text class='shijian'>{{detail.fbsj}}</text>
+  </view>
+  <view class='diqu'>{{detail.sbdq}}</view>
+  <view class='neirong'>
+     <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+  <text class='name1'>@知了中医药</text>
+<loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

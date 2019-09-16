@@ -1,0 +1,26 @@
+
+<!--头部信息-->
+<view class='toubu'>
+  <view class='toubu-zuo'>
+    <open-data type="userAvatarUrl" class="toubu-zuo-touxiang"></open-data>
+  </view>
+  <view class='toubu-you'>
+    <view class='toubu-you-txt1'>
+      <open-data type="userNickName"></open-data>
+    </view>
+    <view class='toubu-you-txt2'>等级：文化大师</view>
+    <view class='toubu-you-txt3'>手机：【绑定手机号码】</view>
+  </view>
+</view>
+<!-- 菜单 -->
+
+  <view class="wode_item_wrap">
+    <view class="wode_item" wx:for="{{mode}}" wx:key="item">
+      <navigator url="{{item.url}}" hover-class="navigator">
+        <image class='img' mode='widthFix' src='{{item.src}}'></image>
+        <text class='mc'>{{item.text}}</text>
+        <span class="arrow_wrap"></span>
+      </navigator>
+    </view>
+  </view>
+  <button class="share" open-type='share' type='primary' style='background-color: #9d1000'>分享</button>

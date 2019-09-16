@@ -1,0 +1,24 @@
+<view class='fenlei'>
+<!-- 左侧分类 -->
+
+  <view class='zuo' style='height:{{winHeight}}px'>
+    <block wx:for="{{navList}}" wx:key="*this">
+      <text class='type-nav {{curNav== item.id? "selected":""}}' bindtap='selectNav' data-id='{{item.id}}'>{{item.name}}</text>
+    </block>
+  </view>
+
+<view class='zuixin'>
+    <block wx:for='{{zuixins}}' wx:key='*this'>
+      <navigator url='/pages/index/tupu/xianxi/xianxi?yc_id={{item.yc_id}}' class='zuixin-item'>
+        <image src='{{item.img}}' class='zuixin-img' mode='widthFix'></image>
+        <text class='zuixin-mc'>{{item.name}}</text>
+        <view class='redu'>
+         热度：200
+        </view>
+      </navigator>
+    </block>
+  </view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

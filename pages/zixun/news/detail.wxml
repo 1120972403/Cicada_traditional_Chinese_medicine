@@ -1,0 +1,18 @@
+<import src='../../../wxParse/wxParse.wxml' />
+<scroll-view scroll-y style='height:{{winHeight}}px'>
+  <view class="title">{{details.title}}</view>
+  <view class=' media-box '>
+    <view class="time">{{details.datatime}}</view>
+    <view class='laiy '>{{details.laiyuan}} </view>
+  </view>
+  <view class='photo '>
+    <image src="{{details.img}}" class="thumb"  mode='widthFix'/>
+  </view>
+  <view class='detail '>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+</scroll-view>
+<loading hidden="{{hidden}}"> 
+  加载中... 
+</loading>
+

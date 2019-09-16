@@ -1,0 +1,67 @@
+
+/*轮播图样式*/
+.slide-image {
+  height: 150px;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+/* 快捷菜单 */
+.menu {
+  display: flex;
+  flex-wrap: wrap; /*换行*/
+  border-bottom: 1px solid gainsboro; /*菜单最下面线条*/
+}
+
+.menu-item {
+  width: 33%; /*1行4个菜单*/
+  padding: 5px; /*内边距*/
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; /*左右居中*/
+  flex-direction: column; /*从上到下*/
+}
+
+.menu-img {
+  width: 66%;
+  align-self: center;
+}
+
+.menu-mc {
+  font-size: 14px;
+  align-self: center;
+}
+/* 为你推荐 */ 
+/*区块标题*/
+
+.qukuai {
+  display: flex;
+  background-color: aliceblue;
+  align-items: center;
+}
+
+.y01 {
+  width: 3px;
+  height: 18px;
+  background-color: green;
+  margin: 5px;
+  box-shadow: 2px 2px 2px gainsboro;
+}
+
+.t01 {
+  color: gray;
+  flex-grow: 1;
+  text-shadow: 1px 1px 1px gainsboro;
+}
+
+.m01 {
+  color: gray;
+  margin-right: 5px;
+  text-shadow: 2px 2px 2px gainsboro;
+}
+.tuijian-img
+{
+  height: 100px;
+  width: 100%;
+  display: inline-block;
+}

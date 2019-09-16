@@ -1,0 +1,110 @@
+@import "../../wxParse/wxParse.wxss";
+
+.timeline-container {
+	margin: 10rpx 10rpx;
+  
+} 
+
+.timeline {
+	display: flex;
+  width: 100%;
+  border: 1px solid #fcfcfc;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px gainsboro;
+  margin-bottom: 5px;
+  
+  box-sizing: border-box;
+}
+
+.timeline .dotline {
+	width: 70rpx;
+	position: relative;
+}
+
+.timeline .dotline .line {
+	width: 2rpx;
+	height: 100%;
+	background-color: #ccc;
+	position: absolute;
+	top: 0;
+	left: 30rpx; 
+}
+
+.timeline .dotline .dot {
+	width: 22rpx;
+	height: 22rpx; 
+	background-color: #30ac63;
+	position: absolute; 
+	top: 20rpx; 
+	left: 20rpx; 
+	border-radius: 50%; 
+}
+
+.timeline .dotline .time {
+	width: 100%;
+	position: absolute;
+	margin-top: 64rpx;
+	z-index: 99;
+	font-size: 24rpx;
+	color: #777;
+	text-align: center;
+}
+
+.timeline .content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1rpx solid #ddd;
+	margin: 6rpx 0;
+}
+
+.timeline .content .chapter {
+	font-size: 30rpx;
+	line-height: 68rpx;
+	color: #444;
+	white-space: normal;
+	padding-right: 20rpx;
+  word-break:break-all;
+}
+.timeline .content .title{
+  line-height: 68rpx;
+	color: #F48A3D;
+	white-space: normal;
+	padding-right: 20rpx;
+  word-break:break-all;
+}
+
+.timeline .content .course {
+	font-size: 28rpx;
+	line-height: 56rpx;
+	color: #999;
+}
+
+
+/* 信息左右排列 */
+
+
+
+
+.course {
+  display: flex;
+  float: left;
+  /* width: 75%; */
+  font-size: 28rpx;
+  line-height: 56rpx;
+  color: #999;
+  /* position: relative; */
+  
+}
+
+/* .tupian{
+ display: flex;
+  width: 25%;
+}
+
+.img {
+  margin: 10rpx;
+} */
+.isBlock {
+  display: none;
+}

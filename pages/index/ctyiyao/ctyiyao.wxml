@@ -1,0 +1,13 @@
+<!-- 快捷菜单 -->
+<scroll-view scroll-y style='height:{{winHeight}}px' class='src-itm'>
+<view class='caidan'>
+ <block wx:for='{{list}}' wx:key='*this'>
+  <navigator url='/pages/index/ctyiyao/detail/detail?ctyy_id={{item.ctyy_id}}' class='caidan-item'>
+    <image src='{{item.img}}' class='img'></image>
+  </navigator>
+</block>
+ <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>
+</scroll-view>

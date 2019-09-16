@@ -1,0 +1,13 @@
+/* pages/index/result/result.wxss */
+.fanhui{
+  position:absolute;
+  bottom:0;
+  width: 80%;
+  margin:10%;
+  
+}
+.btn{
+  /* display: block;*/
+   margin: 0 auto; 
+}
+ 

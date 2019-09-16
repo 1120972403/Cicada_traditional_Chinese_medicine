@@ -1,0 +1,12 @@
+<view class='caidan'>
+  <block wx:for='{{navList}}' wx:key='*this'>
+    <navigator url='/pages/index/ctyiyao/xianxi/xianxi?id={{item.id}}' class='caidan-item'>
+      <view class='back'>
+        <text class='txt'>{{item.name}}</text>
+      </view>
+    </navigator>
+  </block>
+   <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

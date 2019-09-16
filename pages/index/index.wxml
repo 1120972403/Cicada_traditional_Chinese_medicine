@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{images}}" wx:key="item.id" style='height:150px;'>
+    <navigator url=''>
+      <swiper-item>
+      <image src="{{item}}" class="slide-image" ></image>
+      </swiper-item>
+    </navigator>
+  </block>
+</swiper>
+<!-- 快捷菜单 -->
+<view class="menu">
+  <navigator url="{{item.url}}" class="menu-item" wx:for="{{mode}}" wx:key="item">
+    <image src='{{item.src}}' mode='widthFix' class='menu-img'></image>
+    <text class='menu-mc'>{{item.text}}</text>
+  </navigator>
+</view>
+<!-- 为你推荐 -->
+<view class='qukuai'>
+  <view class='y01'></view>
+  <text class='t01'>最新活动</text>
+  <view class='m01'>更多></view>
+</view>
+
+<navigator url='/pages/index/dati/dati' class=''>
+  <image src='/img/dati.png' class='tuijian-img' mode='widthFix'></image>
+</navigator>

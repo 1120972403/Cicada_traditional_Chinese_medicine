@@ -1,0 +1,16 @@
+<block wx:for="{{list}}" wx:key="*this">
+  <navigator url='/pages/zixun/news/detail?id={{item.id}}' class='zixun-item'>
+      <view class='zixun-tupian'>
+        <image class='zixun-img' src='{{item.img}}' mode='widthFix'></image>
+      </view>
+      <view class='zixun-xinxi'>
+        <text class='title'>{{item.title}}</text>
+        <text class='zixun-laiyuan'>来源:{{item.laiyuan}}</text>
+        <view>
+        </view>
+      </view>
+  </navigator>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</block>

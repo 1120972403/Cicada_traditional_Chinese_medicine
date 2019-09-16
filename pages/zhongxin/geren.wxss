@@ -1,0 +1,75 @@
+/*头部信息*/
+.toubu {
+  display: flex;
+  margin: 1px;
+  padding: 10px;
+  background-color: crimson;
+}
+
+.toubu-zuo-touxiang {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 3px 3px 10px gainsboro;
+  display: block;
+  overflow: hidden;
+}
+.toubu-you {
+  padding-left: 10px;
+}
+.toubu-you-txt1 {
+  color: white;
+}
+.toubu-you-txt2 {
+  background-color: darkorange;
+  color: white;
+  margin: 6px 0 10px 0px;
+}
+.toubu-you-txt3 {
+  color: white;
+}
+
+/* 菜单栏 */
+
+.wode_item_wrap {
+	background-color: #FFF;
+	font-size: 16px;
+	margin-top: 10px;
+  border-radius: 20px;
+
+	border-top: 1px solid #E5E5E5;
+}
+.wode_item {
+  height: 45px;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 0 10px;
+	line-height: 45px;
+	position: relative;
+}
+.img{
+  width: 20px; height: 20px;
+}
+.mc{
+  flex-grow: 1;
+  margin-left: 10px;
+}
+.arrow_wrap {
+  position: absolute;
+  width: 50px;
+  height: 45px;
+  right: 0;
+  top: 0;
+  background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554120369717&di=806f2d1e1ad33b1780915281497e7986&imgtype=0&src=http%3A%2F%2Fimage.tupian114.com%2F20140416%2F14403190.png");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 17px 14px;
+}
+
+ .share{
+    margin-top: 200rpx;
+    border:1px solid #E5E5E5;
+    font-size:16px;
+    width: 50%;
+    /* align-items:center; */
+  } 

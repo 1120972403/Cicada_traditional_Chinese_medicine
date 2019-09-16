@@ -1,0 +1,14 @@
+<scroll-view>
+  <view class="timu">{{index+1}}.{{datiList[index].title}}</view>
+</scroll-view>
+<scroll-view style="height: 600rpx; margin-top: 50rpx;">
+  <button id='A' class="anniu" bindtap="btnOpClick" style="background-color: {{bcA}};">A.{{datiList[index].answer_A}}</button>
+  <button id='B' class="anniu" bindtap="btnOpClick" style="background-color: {{bcB}};">B.{{datiList[index].answer_B}}</button>
+  <button id='C' class="anniu" bindtap="btnOpClick" style="background-color: {{bcC}};">C.{{datiList[index].answer_C}}</button>
+</scroll-view>
+<view class="huanti">
+<button bindtap="lastQuestion">上一题</button>
+<button bindtap="nextQuestion">下一题</button>
+<button bindtap="xianshi">{{ny}}</button>
+</view>
+<text class="jifen">积分：每答对一题积2分，目前得分{{defen}}</text>

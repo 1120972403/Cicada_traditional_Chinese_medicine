@@ -1,0 +1,63 @@
+@import "../../wxParse/wxParse.wxss";
+page {
+  background-color: #F9F5EC;
+
+}
+
+.img {
+  box-shadow: 0px 2px 2px gainsboro;
+  width: 100%;
+  height: 400rpx;
+  box-sizing: border-box;
+
+  margin-bottom: 15px;
+}
+
+.xinxi {
+  margin: 10px;
+  line-height: 30px;
+}
+
+.name {
+ 
+  text-align: center;
+  font-size: 16px;
+  font-weight:bold;
+  margin-bottom: 10px;
+}
+
+.name1 {
+   border-top: 1px solid #514f4c;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight:bold;
+}
+.cailiao{
+ border-bottom: 1px solid #514f4c;
+  border-top: 1px solid #514f4c;
+
+}
+.name1-xixni {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #FBC966;
+}
+.name2{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight:bold;
+}
+.name2-xixni{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #FBC966;
+}
+.zuofa{
+   border-bottom: 1px solid #514f4c;
+   border-top: 1px solid #514f4c;
+   margin-top: 10px;
+}
+

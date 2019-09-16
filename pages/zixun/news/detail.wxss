@@ -1,0 +1,54 @@
+@import "../../../wxParse/wxParse.wxss";
+.title {
+	font-size: 20px;
+  font-family: STHeiti;
+	color: #000;
+	margin: 12px 8px;
+	line-height: 130%;
+  text-align:center;
+}
+.media-box {
+	display: flex;
+  flex-direction: row;
+  padding:5px;
+  position:relative;
+    text-align: center;
+    justify-content: center;  
+}
+.time {
+	font-size: 14px;
+	color: #999;
+	margin: 5px 5px;
+
+}
+.laiy{
+  font-size: 14px;
+	color: #999;
+	margin: 5px 15px;
+}
+.photo{
+  text-align: center;
+}
+.thumb {
+	 box-shadow: 0px 2px 2px gainsboro;
+  width: 90%;
+  height: 100px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+}
+.detail{
+  padding: 0px 8px;
+  /* text-indent:2em; */
+  border-top: 10px;
+  line-height: 30px;
+
+}
+.main{
+  font-size: 17px;
+  text-align: center;
+}
+
+
+

@@ -1,0 +1,18 @@
+<view class='a'>
+  <view class='title'>{{detail.zhongyaoming}}</view>
+  <image class='img' mode='widthFix' src='{{detail.img}}'></image>
+  <text class='name'>【别名】：{{detail.bieming}}</text>
+  <text class='name'>【英文名】：{{detail.yingwenming}}</text>
+  <text class='name'>【药用部位】：{{detail.yaoyongbuwei}}</text>
+  <text class='name'>【性状】：{{detail.yaocaixingzhuang}}</text>
+  <text class='name'>【性味归经】：{{detail.xinweiguijing}}</text>
+  <text class='name'>【功效与作用】：{{detail.gongxiaozuoyong}}</text>
+  <text class='name'>【临床应用】：{{detail.lingzhuangyingyong}}</text>
+  <text class='name'>【药理研究】：{{detail.yaoliyanjiu}}</text>
+  <text class='name'>【化学成分】：{{detail.huaxuechengfen}}</text>
+  <text class='name'>【使用禁忌】：{{detail.shiyongjingji}}</text>
+  <text class='name1'>@知了中医药</text>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

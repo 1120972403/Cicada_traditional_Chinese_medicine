@@ -1,0 +1,65 @@
+<!--顶部切换菜单-->
+<view class='swiper-tab'>
+  <view class='swiper-tab-list {{currentTab==0 ? "xuanzhong" : ""}}' data-current='0' bindtap='swichNav'>
+    养生拳
+  </view>
+  <view class='swiper-tab-list {{currentTab==1 ? "xuanzhong" : ""}}' data-current='1' bindtap='swichNav'>
+    药膳
+  </view>
+  <view class='swiper-tab-list {{currentTab==2 ? "xuanzhong" : ""}}' data-current='2' bindtap='swichNav'>
+    经脉帮
+  </view>
+</view>
+<swiper current='{{currentTab}}' class='swiper-box' duration='300' style='height:{{winHeight}}px' bindchange='huadong'>
+
+  <swiper-item>
+    <scroll-view scroll-y style='height:{{winHeight}}px'>
+      <view class='ysq'>
+        <video style="height:240px;width:100%;" src="{{mapUrl}}"> </video>
+      </view>
+      <!-- 折叠展开 -->
+      <view class='zd'>
+        <view class="li toggle" bindtap='changeToggle'>
+          <view>太极拳</view>
+          <view class='li-align'>
+            <text>查看更多</text>
+            <image class='entry' style="transform:rotate({{isShow?'90deg':'-90deg'}});" src="{{entry}}"></image>
+          </view>
+        </view>
+        <view hidden='{{isShow}}' class="li-wrap">
+          <block wx:for="{{content}}" wx:key="*this">
+            <view class='txt'>
+              {{item.img_name}}
+            </view>
+            <view>
+              <image src='https://zlzyy.club{{item.src}}' mode='widthFix' class='img'></image>
+            </view>
+          </block>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <!-- 药膳 -->
+  <swiper-item>
+    <scroll-view scroll-y style='height:{{winHeight}}px'>
+      <view class='zuixin'>
+        <block wx:for='{{ys_list}}' wx:key="*this">
+          <navigator url='/pages/yangshengkangfu/detils?id={{item.id}}' class='zuixin-item'>
+            <image src='{{item.img}}' class='zuixin-img'></image>
+            <text class='zuixin-mc'>{{item.name}}</text>
+            <view class='zuixin-redu'>
+              {{item.guanjianzi}}
+            </view>
+          </navigator>
+        </block>
+      </view>
+    </scroll-view>
+  </swiper-item>
+
+  <swiper-item>
+    <view>
+      <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555685320477&di=d1c9ba6629809287eb519d1a1dba549c&imgtype=0&src=http%3A%2F%2Fpic161.nipic.com%2Ffile%2F20180414%2F15097685_125112069030_2.jpg' class='jingmai-img' mode='widthFix'></image>
+    </view>
+  </swiper-item>
+
+</swiper>

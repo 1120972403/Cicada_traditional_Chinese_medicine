@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/ctyiyao/ctyiyao",
+    "pages/index/ctyiyao/detail/detail",
+    "pages/index/ctyiyao/xianxi/xianxi",
+    "pages/index/tupu/tupu",
+    "pages/index/tupu/xianxi/xianxi",
+    "pages/index/dati/dati",
+    "pages/index/test/test",
+    "pages/index/result/result",
+    "pages/zanshi/zanshi",
+    "pages/zixun/news",
+    "pages/zixun/news/detail",
+    "pages/yangshengkangfu/yangshengkangfu",
+    "pages/yangshengkangfu/detils",
+    "pages/index/xiandaihua/xiandaihua",
+    "pages/index/xiandaihua/details/details",
+    "pages/index/xiandaihua/xiandaihua/zhongyaosuyuan",
+    "pages/index/xiandaihua/xiandaihua/zhongyiyun",
+    "pages/index/minglaozhongyi/minglaozhongyi",
+    "pages/zhongxin/geren",
+    "pages/zhongxin/help/help",
+    "pages/zhongxin/liuyan/liuyan",
+    "pages/zhongxin/guanyu/guanyu",
+    "pages/authorize/authorize"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#BF9144",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#9d1000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/zixun/news",
+        "text": "养生资讯",
+        "iconPath": "icon/zixun.png",
+        "selectedIconPath": "icon/zixun_se.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/shouye.png",
+        "selectedIconPath": "icon/shouye_se.png"
+      },
+      {
+        "pagePath": "pages/zhongxin/geren",
+        "text": "个人中心",
+        "iconPath": "icon/my.png",
+        "selectedIconPath": "icon/my_se.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

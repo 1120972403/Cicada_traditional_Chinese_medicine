@@ -1,0 +1,15 @@
+<form bindsubmit='pinglun'>
+  <view class='pinglun'>
+    <text class='biaoti'></text>
+    <view class='star-image-back'>
+      <block wx:for="{{stars}}" wx:key="*this" class="star-item">
+        <image class="star-image" style="left: {{item*50}}px" src="{{key >= item ? selectedSrc  : normalSrc}}" data-key="{{item}}" bindtap="select00" wx:key="*this"></image>
+      </block>
+    </view>
+    <view class='pinglun-biaoti'>评价（请打分）</view>
+    <view class='pinglun-neirong'>
+      <textarea placeholder='请输入评论，500字以内' value='{{form_info}}' name="neirong" auto-height></textarea>
+    </view>
+      <button class='pinglun-tijiao' form-type='submit'>提交评论</button>
+  </view>
+</form>
